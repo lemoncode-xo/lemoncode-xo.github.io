@@ -139,3 +139,7 @@ footer {
 p {
     text-align: center;
 }
+.counter {
+    width: auto;
+    float: right;
+}
