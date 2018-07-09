@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang=en>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The Lines above must be included in any html file -->
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    
+    <!-- Describing the website -->
+    <meta name="description" content="Ojo Philemon - Computer Engineer">
+    <meta name="author" content="Ojo Philemon">
+    <link rel="icon" href="assets/icons/favicon.ico">
+    <!-- For The Contact Icons // Peculiar to this file only-->
+    <link rel="stylesheet" href="assets/css/contact_icons.css" />
+        
+    <title>root@philemon:~#</title>
+    <link rel="stylesheet" href="assets/css/style_0.css" />
+</head>
+<body>
+    <h1>root@philemon:~/contact#</h1>
+    
+    <nav>
+        <a href="index.html"><button class="button_1">#Home</button></a>
+        <a href="projects"><button class="button_1">#Projects</button></a>
+        <a href="bio"><button class="button_1">#About Me</button></a>
+        <a href="contact"><button class="button_1 active">#Contact Me</button></a>
+    </nav>
+    
+    <div class="costum_container">
+        </br></br></br></br>
+        <a href="https://www.linkedin.com/in/ojo-philemon-b42793129/">
+            <img class="logo"
+                 src="assets/icons/linkedin.svg"
+                 alt="Linkedin logo" title="Linkedin"/>
+        </a>
+        <a href="mailto:philebaba47@outlook.com?subject=Hello%20from%20root@philemon:~#">
+            <img class="logo"
+                 src="assets/icons/microsoftoutlook.svg"
+                 alt="Outlook logo" title="Outlook"/>
+        </a>       
+        <a href="https://github.com/sparkles47">
+            <img class="logo"
+                 src="assets/icons/github.svg"
+                 alt="Github logo" title="Github"/>
+        </a>
+        <a href="https://www.instagram.com/phillywillis">
+            <img class="logo"
+                 src="assets/icons/instagram.svg"
+                 alt="Instagram logo" title="Instagram"/>
+        </a>
+    
+        </br>
+        </br>You can contact me via these mediums
+        </br>Choose One
+    </div>
+        
+    <footer style="font-size: smaller;">
+       &copyOjo Philemon. All Rights Reserved.
+    </footer
+    
+    <!-- ================================================== -->
+    <!-- At the end of the document so page can load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

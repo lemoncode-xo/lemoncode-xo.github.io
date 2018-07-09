@@ -1,0 +1,65 @@
+.project_container{
+    min-height: 550px;
+    height: auto;
+    /*max-height: auto; /*451px;*/
+    margin-left: -110px;
+    margin-right: 7px;
+    margin-bottom: -20px;
+    
+    padding-left: 0px;
+    
+    
+    /*padding: 0px 20% 0px;*/
+    background-color: rgba(23,28,33,0.19);
+    animation-name: divbg;
+    animation-duration: 0.4s;
+    text-align: center;
+    
+    overflow-y: auto;
+    }
+.ongoing {
+    height: inherit;
+    overflow-y: hidden;
+    overflow-y: hidden;
+}
+.completed {
+    height: inherit;
+}
+    
+.row {
+    
+    border-radius: 20%;
+    
+    background-color: black;
+    border-bottom: double orange;
+
+    height: 180px;
+    width: 180px;
+    
+    margin-left: 5em;
+    margin-top: 0.5em;
+    
+    
+    box-sizing: padding-box;
+    
+    text-align: center;
+    float: left;
+    
+    cursor: pointer;
+}
+
+.footer_project {
+    /*width: auto;
+    min-height: 450px; */
+    background-color: rgba(20,20,20,0.5); /*rgba(23,28,33,0.9);*/
+    margin-left: -110px;
+    margin-right: -7px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    color: #c6e863;
+    text-align: center;
+    font-size: smaller;
+    
+    position: relative;
+    clear: both;
+}
