@@ -55,7 +55,7 @@ h1 {
   display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
-  min-height: auto;
+  min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
@@ -173,13 +173,21 @@ h1 {
   }
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
     .masthead,
     .mastfoot,
     .cover-container {
       width: 700px;
     }
+  } */
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 90%;
   }
+}
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
@@ -267,4 +275,26 @@ footer {
     color: white;
     width: 40%;
     border-radius: 50%;
+}
+
+.project_icon {
+    
+  border-radius: 20%;
+  
+  background-color: black;
+  border-bottom: double orange;
+
+  height: 180px;
+  width: 180px;
+  
+  margin-left: 5em;
+  margin-top: 0.5em;
+  
+  
+  box-sizing: padding-box;
+  
+  text-align: center;
+  float: left;
+  
+  cursor: pointer;
 }
