@@ -11,33 +11,48 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
     <!-- Describing the website -->
     <meta name="description" content="Ojo Philemon - Computer Engineer">
     <meta name="author" content="Ojo Philemon">
     <link rel="icon" href="assets/icons/favicon.ico">
     
     <title>root@philemon:~#</title>
-    <link rel="stylesheet" href="assets/css/style_0.css" />
+    <!--<link rel="stylesheet" href="assets/css/style_0.css" />-->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>root@philemon:~/bio#</h1>
-    
-    <nav>
-        <a href="index.html"><button href=""class="button_1">#Home</button></a>
-        <a href="projects.html"><button class="button_1">#Projects</button></a>
-        <a href="bio.html"><button class="button_1 active">#About Me</button></a>
-        <a href="contact.html"><button class="button_1">#Contact Me</button></a>
-    </nav>
-    
-    <div class="costum_container">
-        <article class="bio_article">
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->               
+                <div class="masterhead clearfix">
+                    <div class="inner">
+                        <h1>root@philemon:~/bio#</h1>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li><a href="index.html"><button class="button_1" >#Home</button></a></li>
+                            <li><a href="projects.html"><button class="button_1">#Projects</button></a></li>
+                            <li class="active"><a href="bio.html" ><button class="button_1 active">#About Me</button></a></li>
+                            <li><a href="contact.html"><button class="button_1">#Contact Me</button></a></li>
+                        </ul>
+                    </nav>
+                    </div>
+                </div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+<div class="container-fluid">
+        <article class="lead">
             </br>
-            <img class="profile_photo" alt="Picture" src="assets/images/profile.jpg">
+            <img class="profile_photo" alt="Picture" src="assets/images/profile.png">
             </br>
             
             <i style="clear: both;">Hello there,</i>
             </br>
-            My name is Ojo Philemon and I love learning new things.
+            My name is Ojo Philemon and I love to learn new things.
             
             </br>As a full stack developer, and student,
             I am currently pursuing a degree in
@@ -45,7 +60,7 @@
             Federal University of Technology,
             Akure, Nigeria.
             </br>
-            </br>
+            </br></br><br>
             <i style="float: left; text-indent: 50px;">Skills:</i>
             </br>Conventional Languages: Yoruba, English, a little French, a little Spanish
             </br>Programming Languages: Python, C#, HTML, CSS, Java... e.t.c
@@ -53,11 +68,20 @@
         
     </div>
 
-    <footer style="font-size: smaller;">
+    <footer>
         &copyOjo Philemon. All Rights Reserved. 2018
     </footer>
-    
+        
+        </div>
+    </div>
+</div>
+           
     <!-- ================================================== -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap.min.js"></script>
     <!-- At the end of the document so page can load faster -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>

@@ -11,28 +11,43 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+
     <!-- Describing the website -->
     <meta name="description" content="Ojo Philemon - Computer Engineer">
     <meta name="author" content="Ojo Philemon">
     <link rel="icon" href="assets/icons/favicon.ico">
     
     <title>root@philemon:~#</title>
-    <link rel="stylesheet" href="assets/css/style_0.css" />
+    <!--<link rel="stylesheet" href="assets/css/style_0.css" />-->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>root@philemon:~#</h1>
-    
-    <nav>
-        <a href="index.html"><button class="button_1 active">#Home</button></a>
-        <a href="projects.html"><button class="button_1">#Projects</button></a>
-        <a href="bio.html"><button class="button_1">#About Me</button></a>
-        <a href="contact.html"><button class="button_1">#Contact Me</button></a>
-    </nav>
-    
-    <div class="costum_container">
-    <article class="alert" style="background-image:url('assets/images/caption_bg.jpg');">
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+
+ <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->               
+                <div class="masterhead clearfix">
+                    <div class="inner">
+                        <h1>root@philemon:~#</h1>
+                    <nav>
+                        <ul class="nav masthead-nav">
+                            <li class="active"><a href="index.html"><button class="button_1 active" >#Home</button></a></li>
+                            <li><a href="projects.html"><button class="button_1">#Projects</button></a></li>
+                            <li><a href="bio.html"><button class="button_1">#About Me</button></a></li>
+                            <li><a href="contact.html"><button class="button_1">#Contact Me</button></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+<!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+
+    <div class="container-fluid">
+    <article class="alert lead" style="background-image:url('assets/images/caption_bg.jpg');">
         </br><i style="color: black; font-size: 40px;">Hello friend,</i>
-        </br>Wellcome. My name is <b>Philemon</b>.
+        </br>Wellcome. My name is <b style="color: #144ca0;">Philemon</b>.
         </br>Feel free to look around, check out my projects and contact me.
         </br>Anytime...
     </article>
@@ -54,11 +69,20 @@
         </div>
     </div>
    
-   <footer style="font-size: smaller;">
+   <footer>
     &copyOjo Philemon. All Rights Reserved. 2018
    </footer>
+
+   </div>
+</div>
+</div>
    
    <!-- ================================================== -->
+   <!-- Bootstrap core JavaScript
+   ================================================== -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="../static/assets/js/vendor/jquery.min.js"><\/script>')</script>
+   <script src="bootstrap.min.js"></script>
    <!-- At the end of the document so page can load faster -->
    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
