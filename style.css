@@ -302,3 +302,12 @@ footer {
       background-color: rgba(23,28,33,0.9);
   }
 }
+
+.coming-soon{
+  color: goldenrod;
+  font-size: 11pt;
+}
+.fixing{
+  text-decoration-style: dashed;
+  color: firebrick;
+}
