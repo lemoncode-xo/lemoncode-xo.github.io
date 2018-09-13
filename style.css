@@ -428,3 +428,9 @@ footer {
   white-space: nowrap;
   width: 1px;
 }
+.EntityPhoto-circle-9:hover { 
+  opacity: 0.7;
+}
+.EntityPhoto-circle-9:hover {
+  opacity: 1;
+}
