@@ -1,0 +1,27 @@
+#mainNav{
+    border-color:rgba(34,34,34,.05);
+    background-color:rgba(255,255,255,.3);
+    -webkit-transition:all .35s;
+    -moz-transition:all .35s;
+    transition:all .35s;
+    font-family:Catamaran,Helvetica,Arial,sans-serif;
+    font-weight:200;
+    letter-spacing:1px;
+}
+
+@media (min-width:992px){
+    #mainNav{
+        border-color:transparent;
+        background-color:transparent;
+    }
+    #mainNav .navbar-brand{
+        color:fade(white,70%);
+    }
+    #mainNav .navbar-brand:focus,
+    #mainNav .navbar-brand:hover{
+        color:#fff}
+
+    #mainNav.navbar-shrink{
+        border-color:rgba(34,34,34,.1);
+        background-color:rgba(255,255,255,.7);
+    }

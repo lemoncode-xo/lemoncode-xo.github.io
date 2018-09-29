@@ -289,14 +289,14 @@ footer {
   height: 180px;
   width: 180px;
   
-  margin-left: 5em;
-  margin-top: 0.5em;
+  margin-left: 2em;
+  /*margin-top: 0.5em;*/
   
   
-  box-sizing: padding-box;
+  /*box-sizing: padding-box;*/
   
   text-align: center;
-  float: left;
+  /*float: left;*/
   
   cursor: pointer;
 }
@@ -371,7 +371,7 @@ footer {
   border-radius: 2px;
       border-top-left-radius: 2px;
       border-top-right-radius: 2px;
-  position: relative;
+  /*position: relative;*/ /*To Allow gotto top icon to show. It was blocking it*/
   list-style: none;
 }
 .pv-top-card-v2-section__profile-photo-container {
@@ -441,3 +441,32 @@ footer {
 .EntityPhoto-circle-9:hover {
   opacity: 1;
 }
+
+/*=============================================*/
+#back2Top {
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: #DDD;
+  color: #555;
+  filter: invert(100%);
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+#back2Top:hover {
+  background-color: #DDF;
+  color: #000;
+}
+/*===================================================*/

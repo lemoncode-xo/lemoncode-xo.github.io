@@ -24,7 +24,8 @@
         
         <!-- Bootstrap -->
         <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="modal.css">
 
         <!-- Describing the website -->
         <meta name="description" content="Ojo Philemon - Computer Engineer">
@@ -34,6 +35,8 @@
         <title>root@philemon:~#</title>
         <!--<link rel="stylesheet" href="assets/css/style_0.css" />-->
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style0.css" />
+        <link rel="stylesheet" href="fonts.css" />
         <script src="assets/js/ie-emulation-modes-warning.js"></script>
     </head>
     <body>
@@ -42,35 +45,402 @@
                 <div class="cover-container">
 
     <!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->               
-                    <div class="masterhead clearfix">
+                    <div class="masterhead clearfix" id="home">
                         <div class="inner">
                             <h1>root@philemon:~#</h1>
-                        <nav>
-                            <ul class="nav masthead-nav">
-                                <li class="active"><a href="index.html"><button class="button_1 active" >#Home</button></a></li>
-                                <li><a href="projects.html"><button class="button_1">#My Work</button></a></li>
-                                <li><a href="bio.html"><button class="button_1">#About Me</button></a></li>
-                                <li><a href="contact.html"><button class="button_1">#Contact Me</button></a></li>
-                            </ul>
-                        </nav>
+                        
+                            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+                                <div class="container">
+                                    <button style="color:rgb(173, 255, 47)" class="navbar-toggler navbar-toggler-right button_1" 
+                                        type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" 
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        Menu
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                                        <ul class="nav masthead-nav ml-auto">
+                                            <li class="nav-item">
+                                                <a class="js-scroll-trigger" 
+                                                    href="#home"><button class="button_1 active" >#Home</button>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="js-scroll-trigger"
+                                                    href="#projects"><button class="button_1">#My Work</button>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="js-scroll-trigger"
+                                                href="#bio"><button class="button_1">#About Me</button></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="js-scroll-trigger" 
+                                                href="#contact"><button class="button_1">#Contact Me</button></a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="OjoPhilemonCV.pdf"><button class="button_1">MY CV</button></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
-                    </div>
+                    </div>    
+                    <!--<li style="color: #D65F5F"class="nav-item">
+                        Happy Independence Day.<p style="color:greenyellow"> Nigeria</p>
+                    </li>-->
     <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
-
+    
+    <!--Home Page Begins-->
                     <div class="container-fluid">
                         <article class="alert lead" style="background-image:url('caption_bg.jpg');">    
                             <br/>
-                            <i style="color: black; font-size: 40px;">Hello friend,</i>
+                            <p style="color: black; font-size: 40px;">Hello friend,</p>
                             <br/>I'm <b style="color: #144ca0;">Philemon</b>.
                             <br/><span class="typed"></span> who loves to learn new stuff
                             <br>
-                            <br><span style="color: rgb(242, 92, 78)">"Welcome to my site"</p>
+                            <br><span style="color: rgb(242, 92, 78)">"Welcome to my site"</span>
                         </article>
 
                         <br>
-                        <a href="contact.html"><button class="button_1">Contact Me</button></a>
-                        <br><br><br>
+                        <a class="js-scroll-trigger" 
+                            href="#contact"><button class="button_1">#Contact Me</button></a>
+                        <br><br><br><br><br><br>
                     </div>
+            
+    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    
+    <!--Project Page Begins-->            
+                    <div class="container-fluid" id="projects">
+                        <h1>:~/projects#</h1>
+                        <p class="lead">
+                            Here are some of the things I've worked on, 
+                            and some I'm currently working on        
+                            <br>
+                            Click on any icon to learn more
+    
+                        <div class="row">
+                         
+                            <!-- ===============Beginneing of First Project============================ -->
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 project-column">    
+                                <div class="project_icon" data-toggle="modal" data-target="#1modal">
+                                    <br>
+                                    <h3>SES-Ads</h3> [Online] -- {cc: Sept 2018]
+                                </div>
+                                <div id="1modal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content" style="background-color:darkseagreen">
+                                            <!-- Header -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                                <h3 class="modal-title">SES-Ads</h3>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="modal-body">
+                                                <p>
+                                                A cyber platform where you got direct dealings with the trusted seller of a service
+                                                and set-up your business for international publicity.
+                                                </p>
+                                                <p>
+                                                    Try it now →
+                                                    <a class="blue-link" href="https://sesads.github.io">SES-Ads</a>
+                                                </p>
+                                            </div>
+                                            <!-- Footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default button_1"
+                                                data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================First Project Ends=========================== -->
+
+                            <!-- ===============Beginneing of Second Project============================ -->
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 project-column">    
+                                <div class="project_icon" data-toggle="modal" data-target="#2modal">
+                                    <br>
+                                    <h3>Chatting App</h3> [Windows] -- {cc:Nov 2017]
+                                </div>
+                                <div id="2modal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content" style="background-color:dodgerblue">
+                                            <!-- Header -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                                <h3 class="modal-title">Chat Buddy</h3>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="modal-body">
+                                                <p>
+                                                Check out the desktop chatting app I designed using C#. I call it Chat Buddy.
+                                                </p>
+                                                <p>
+                                                other versions are available, but only the code/software of the latest
+                                                version is available for public.
+                                                </p>
+                                                <p>
+                                                    Try it, and code is also available here:
+                                                    <a class="blue-link" href="https://github.com/Sparkles47/chat-buddyc-/blob/master/chatbuddy.cs">Github - Chat Buddy C#</a>
+                                                </p>
+                                                <p>Contact me(via email) if you want to get code for previous versions. I'll be happy to share.</p>
+                                            </div>
+                                            <!-- Footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default button_1"
+                                                data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================Second Project Ends=========================== -->
+                            
+                            <!-- ============Third project Begins===================== -->
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 project-column">    
+                                <div class="project_icon" data-toggle="modal" data-target="#3modal">
+                                    <br>
+                                    <h3>GPA Calculator</h3> [Linux/Windows] -- {cc:Oct 2017}
+                                </div>
+                                <div id="3modal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Header -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                                <h3 class="modal-title">GPA Calculator</h3>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="modal-body">
+                                                <p>
+                                                I built a 5.0 GPA calculator using python.
+                                                </p>
+                                                <p>
+                                                It is available for Windows and Linux OS distributions.
+                                                Both distibutions have both GUI and command based versions of the software
+                                                </p>
+                                                <p>
+                                                    Code is available here: (Run futagpa.py)  
+                                                    <a class="blue-link" href="https://github.com/Sparkles47/futagpa">Github - FUTA 5.0 GPA calculator</a>
+                                                </p>
+                                            </div>
+                                            <!-- Footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default button_1"
+                                                data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- =========Third Project Ends================================== -->
+                    
+                            <!-- =========Coming soon 1 begins================================== -->
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 project-column">
+                                <div class="project_icon" data-toggle="modal" data-target="#-2modal">    
+                                    <br>
+                                    <h3>Drudge </h3>[Linux]
+                                    <p class="coming-soon">Coming soon...</p>
+                                </div>
+                                <div id="-2modal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!-- Header -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                                <h3 class="modal-title">Drudge</h3>
+                                                <br/><p class="coming-soon">Coming soon...</p>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="modal-body">
+                                                <p>Drudge? </p>
+                                                <p>wondering what it means? </p>
+                                                <p>You will find out soon enough. Come back again to check some other time.</p>
+                                                <p style="font-size: 14px; color: green;">Build Category: Personal.</p>
+                                            </div>
+                                            <!-- Footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default button_1"
+                                                data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- =========Coming soon 1 Ends================================== -->
+                            
+                        <!-- =========Coming soon 2 starts================================== --> 
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 project-column">
+                            <div class="project_icon" data-toggle="modal" data-target="#-1modal">
+                                <br>
+                                <h3>Dictio </h3>[Linux]
+                                <br/><p class="coming-soon">Coming soon...</p>
+                                </div>
+                                <div id="-1modal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content"> -->
+                                            <!-- Header -->
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                                <h3 class="modal-title">Dictio</h3>
+                                                <p class="coming-soon">Coming soon...</p>
+                                            </div>
+                                            <!-- Body -->
+                                            <div class="modal-body">
+                                                <p>I am currently working on a dictionary app that works online and offline
+                                                for linux OS.
+                                                </p>
+                                                <p>Check out the project and feel free to join in the development.</p>
+                                                <p>
+                                                    Try it here:
+                                                    <a class="blue-link" href="https://github.com/Sparkles47/dictio/blob/master/main.py">Dictio</a>
+                                                </p>
+                                                <p>
+                                                    Code is available here:
+                                                    <a class="blue-link" href="https://github.com/Sparkles47/dictio">Github - Dictio</a>
+                                                </p>
+                                            </div>
+                                            <!-- Footer -->
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default button_1"
+                                                data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- =============Coming soon 2 ends============================== -->
+                    
+                        <!-- ================First Project=========================== -->
+                        <!-- <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 project-column">    
+                                <div class="project_icon" data-toggle="modal" data-target="#1modal">   
+                                    <br>
+                                    <h3>serenesparkles
+                                        .online </h3>{cc:Dec 2017}
+                                        <p class="coming-soon fixing">fixing...</p>
+                                </div>
+                                <div id="1modal" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content"> -->
+                                            <!-- Header -->
+                                            <!-- <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                                <h3 class="modal-title">serenesparkles.online</h3>
+                                                <p class="coming-soon fixing">fixing...</p>
+                                            </div> -->
+                                            <!-- Body -->
+                                            <!-- <div class="modal-body">
+                                                <p>
+                                                    Project Type: Website
+                                                </p>
+                                                <p>
+                                                    <a class="blue-link" href="http://serenesparkles.online">serenesparkles.online</a>
+                                                </p>
+                                                <p style="color: red;">Some issues with the effective rendering this website have been noticed
+                                                    and are undergoing fixing at the moment. please check other projects and come back
+                                                    again some other time. Thank you</p>
+                                            </div> -->
+                                            <!-- Footer -->
+                                            <!-- <div class="modal-footer">
+                                                <button type="button" class="btn btn-default button_1"
+                                                data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!-- ===========First Project ends================================ -->
+                            <!-- Brought to the end of projects because of inavalability at the moment
+                                move back to top (first project) after release/completion of this project -->
+                        </div>
+                    </div>
+    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->    
+               
+    <!--Bio Page Begins-->            
+                    <div class="container-fluid" id="bio">
+                        <h1>:~/bio#</h1>
+                        <div class="Elevation-2dp profile-background-image" style="background-image:url('dark-wood.jpg');"></div>
+                        <div>
+                            <section class="pv-profile-section pv-top-card-section artdeco-container-card">
+                                <div class=".pv-top-card-section__profile-photo-container pv-top-card-v2-section__profile-photo-container">
+                                <br>
+                                <div class="pv-top-card-section__photo-wrapper pv-top-card-v2-section__photo-wrapper">
+                                    <div class="presence-entity pv-top-card-section__image presence-entity--size-9">
+                                        <div aria-label="Ojo Philemon" 
+                                            class="pv-top-card-section__photo presence-entity__image EntityPhoto-circle-9" 
+                                            style="background-image:url('profile.JPG');">
+                                            <span class="visually-hidden">Ojo Philemon</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h1 class="bio_h1">Ojo Philemon</h1>
+                                <h2 class="bio_h2 ml13">(*) Self-taught</h2>
+                                <h2 class="bio_h2 ml13">(*) Full Stack Developer</h2>
+                                <h2 class="bio_h2 ml13">(*) Founder and Creator of SES-Ads</h2>
+                                <p class="lead">
+                                    Multi-talented Bug Fixing Organism who wants to learn more. I want to be a Nanotechnologist someday.
+                                </p>
+                                <a href="https://www.linkedin.com/in/ojo-philemon-b42793129/">
+                                    <button class="bio_button_1 button_1">View linkedin Profile</button></a>
+                                </div>
+                            </section>
+                            <script src="anime.min.js"></script>
+                        </div>
+                    </div>
+    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->    
+                    
+    <!--Contact Page Begins-->
+                    <br><br>
+                    <div class="container-fluid" id="contact">
+                        <h1>:~/contact#</h1>
+                        <br><br>
+                        <p class="lead">Reach me</p>
+     
+                        <div class="row"> 
+                        <br><br>
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                <a href="https://www.linkedin.com/in/ojo-philemon-b42793129/">
+                                    <img class="logo"
+                                    src="assets/icons/linkedin.svg"
+                                    alt="Linkedin logo" title="Linkedin"/>
+                                </a>
+                            </div>
+                            
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                <a href="mailto:philebaba47@outlook.com?subject=Hello%20from%20root@philemon:~#">
+                                    <img class="logo"
+                                    src="assets/icons/microsoftoutlook.svg"
+                                    alt="Outlook logo" title="Outlook"/>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                <a href="https://github.com/sparkles47">
+                                    <img class="logo"
+                                    src="assets/icons/github.svg"
+                                    alt="Github logo" title="Github"/>
+                                </a>
+                            </div>
+
+                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                                <a href="https://www.instagram.com/phillywillis">
+                                    <img class="logo"
+                                    src="assets/icons/instagram.svg"
+                                    alt="Instagram logo" title="Instagram"/>
+                                </a>
+                            </div>
+                            <br>
+                        </div>
+                        <br/><br>
+                        
+                        <p class="lead">You can reach me via any of these mediums.
+                            <br/>...kindly select one
+                        </p>
+                    </div>
+    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++-->                    
+
+                    <br><br>
                     
                     <footer>
                         made with <span style="color: #D65F5F"><strong>&hearts;</strong></span> by <span style="color: #3f8aff"><strong>Ojo Philemon</strong></span> | &copy; 2018
@@ -80,18 +450,27 @@
             </div>
         </div>
 
+        <!-- Back to top button -->
+        <a id="back2Top" class="js-scroll-trigger" title="Back to top" href="#home">→
+            <!-- <img  width="50px" height="50px" src="go-up.png" alt="Go To Top" title="Go To Top"/> -->
+        </a>
         
         <!-- ================================================== -->
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <script src="jquery.js"></script>
         <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
+        <script src="bootstrap.js"></script>
         <script src="bootstrap.min.js"></script>
         <!-- At the end of the document so page can load faster -->
         <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
+        <!-- Plugin JavaScript -->
+        <script src="plugin.js"></script>
+
         <!-- Custom Javascript-->
-        <script src="typing-anim.js"></script>
+        <script type="text/javascript" src="custom.js"></script>
+        <script type="text/javascript"src="text-anims.js"></script>
     </body>
 </html>
