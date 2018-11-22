@@ -45,6 +45,7 @@
     <title>root@philemon:~#</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="text-anims.css" />
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
 </head>
 <body>
@@ -77,12 +78,21 @@
 
 <div class="container-fluid">
     <div class="row">
-                         
+        
         <!-- ===============Beginning of First Project============================ -->
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 project-column">    
-            <div class="project_icon" data-toggle="modal" data-target="#1modal">
+            <div class="project_icon" style="background-color:#fff;" data-toggle="modal" data-target="#1">
                 <br>
-                <h3>SES-Ads</h3> [Online] -- {cc: Sept 2018]
+                <h3 class="ml13">Pen-on-Paper Artist</h3>
+                <p class="coming-soon"> coming-soon <!--{cc: Sept 2018]--></p>
+            </div>
+        </div>
+        
+        <!-- ===============Beginning of First Project============================ -->
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 project-column">    
+            <div class="project_icon" style="background-color: #255;" data-toggle="modal" data-target="#1modal">
+                <br>
+                <h3 class="ml13">SES-Ads</h3> [Online] -- {cc: Sept 2018]
             </div>
             <div id="1modal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
@@ -116,7 +126,7 @@
 
         <!-- ===============Beginneing of Second Project============================ -->
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 project-column">    
-            <div class="project_icon" data-toggle="modal" data-target="#2modal">
+            <div class="project_icon" style="background-color:dodgerblue; color: #222" data-toggle="modal" data-target="#2modal">
                 <br>
                 <h3>Chatting App</h3> [Windows] -- {cc:Nov 2017]
             </div>
@@ -287,6 +297,7 @@
     <script src="jquery.js"></script>
     <script>window.jQuery || document.write('<script src="jquery.min.js"><\/script>')</script>
     <script src="bootstrap.min.js"></script>
+    <script src="text-anims.js"></script>
     <!-- At the end of the document so page can load faster -->
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
