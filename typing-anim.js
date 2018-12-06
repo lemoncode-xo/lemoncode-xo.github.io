@@ -7,7 +7,7 @@ $(document).ready(function() {
   var typing = $(".typed");
   $(function() {
     typing.typed({
-      strings: ["a 'Self-taught Developer'", "a 'Full Stack Developer'", "an 'Entrepreneur'",  "just a guy..."],
+      strings: ["a self-taught developer", "a full-stack developer", "a genius codesmith", "an entrepreneur",  "just a guy..."],
       typeSpeed: 100,
       loop: true,
     });
