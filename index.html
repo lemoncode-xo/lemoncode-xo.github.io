@@ -43,6 +43,7 @@
         <title>root@philemon:~#</title>
         <!--<link rel="stylesheet" href="assets/css/style_0.css" />-->
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="text-anims.css" />
         <script src="assets/js/ie-emulation-modes-warning.js"></script>
     </head>
     <body>
@@ -57,8 +58,7 @@
                         <nav>
                             <ul class="nav masthead-nav">
                                 <li class="active"><a href="index.html"><button class="button_1 active" >#Home</button></a></li>
-                                <li><a href="projects.html"><button class="button_1">#Works</button></a></li>
-                                <li><a href="bio.html"><button class="button_1">#About Me</button></a></li>
+                                <li><a href="portfolio.html"><button class="button_1">#Portfolio</button></a></li>
                                 <li><a href="contact.html"><button class="button_1">#Contact Me</button></a></li>
                                 <li><a href="OjoPhilemonCV.pdf"><button class="button_1">Résumé</button></a></li>
                             </ul>
@@ -70,7 +70,7 @@
                     <div class="container-fluid">
                         <article class="alert lead" style="background-image:url('caption_bg.jpg');">    
                             <br/>
-                            <span style="color: black; font-size: 40px;"><i>Hello friend,</i>🙋🏻‍</span>
+                            <span style="color: black; font-size: 40px;"><i>Hello friend,</i></span>
                             <br/>My name is <b style="color: #144ca0;">Philemon</b>. <!--A Genius Codesmith.-->
                             <br>
                             <br/>I am <span class="typed"></span> who loves to learn and share more stuff <dfn>{knowledge}</dfn>
@@ -79,13 +79,51 @@
                         </article>
 
                         <br>
-                        <a href="contact.html"><button class="button_1">Contact Me</button></a>
                         👀
-                        <a href="https://www.linkedin.com/in/ojo-philemon-b42793129/">
-                            <button class="bio_button_1 button_1">View linkedin Profile</button>
-                        </a>
-                        👀
-                        <br><br><br>
+                        <br><br>
+
+                        <p>
+							<ul class="colorlib-social-icons" style="list-style: none;">
+								<li><a href="#"><i class="icon-twitter"></i></a></li>
+								<li><a href="#"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/ojo-philemon-b42793129/">
+                                    <i class="icon-linkedin"></i></a>
+                                </li>
+								<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							</ul>
+						</p>
+                    </div>
+
+                    <div class="container-fluid" id="bio">
+                        <h1>/bio</h1>
+                        <div class="Elevation-2dp profile-background-image" style="background-image:url('dark-wood.jpg');"></div>
+                        <div>
+                            <section class="pv-profile-section pv-top-card-section artdeco-container-card">
+                                <div class=".pv-top-card-section__profile-photo-container pv-top-card-v2-section__profile-photo-container">
+
+                                <div class="pv-top-card-section__photo-wrapper pv-top-card-v2-section__photo-wrapper">
+                                    <div class="presence-entity pv-top-card-section__image presence-entity--size-9">
+                                        <div aria-label="Ojo Philemon" 
+                                            class="pv-top-card-section__photo presence-entity__image EntityPhoto-circle-9" 
+                                            style="background-image:url('profile.JPG');">
+                                            <span class="visually-hidden">Ojo Philemon</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h1 class="bio_h1">Ojo Philemon</h1>
+                                <a href="contact.html" ><h2 class="bio_h2 ml13">(*) Self-taught Full Stack Developer 💻</h2></a>
+                                <a href="art-gallery.html"><h2 class="bio_h2 ml13">(*) Pen-on-Paper Artist ✍️</h2></a>
+                                <a href="http://sesads.github.io"><h2 class="bio_h2 ml13">(*) Advertising Agent @SESADS ✍️</h2></a>
+                                <p class="lead">
+                                    Multi-talented Codesmith who loves to learn and share more. <!--I'm gonna be a Nanotechnologist someday.-->
+                                </p>
+                                <a href="https://www.linkedin.com/in/ojo-philemon-b42793129/">
+                                    <button class="bio_button_1 button_1">View linkedin Profile</button></a>
+                                </div>
+                            </section>
+                            <script src="anime.min.js"></script>
+                        </div>
                     </div>
                     
                     <footer>
@@ -96,6 +134,7 @@
             </div>
         </div>
 
+        
         
         <!-- ================================================== -->
         <!-- Bootstrap core JavaScript
@@ -108,6 +147,28 @@
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 
         <!-- Custom Javascript-->
-        <script src="typing-anim.js"></script>
+        <script src="text-anims.js"></script>
+
+        <a id="back2Top" class="js-scroll-trigger" title="Back to top" href="#">&#10148;</a>
+        <script>
+            /*Scroll to top when arrow up clicked BEGIN*/
+            $(window).scroll(function() {
+            var height = $(window).scrollTop();
+            if (height > 100) {
+                $('#back2Top').fadeIn();
+            } else {
+                $('#back2Top').fadeOut();
+            }
+            });
+            $(document).ready(function() {
+            $("#back2Top").click(function(event) {
+                event.preventDefault();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+                return false;
+            });
+
+            });
+            /*Scroll to top when arrow up clicked END*/
+        </script>
     </body>
 </html>
