@@ -1,3 +1,5 @@
+
+
 /*
  * Globals
  */
@@ -467,4 +469,36 @@ footer {
 #back2Top:hover {
     background-color: #FFF;
     color: #000;
+}
+
+  .staff-entry .colorlib-social-icons li {
+  margin-left: 0; }
+  .staff-entry .colorlib-social-icons li a {
+    padding: 0; }
+    .colorlib-social-icons {
+      margin: 0;
+      padding: 0; }
+      .colorlib-social-icons li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline; }
+        .colorlib-social-icons li a {
+          display: -moz-inline-stack;
+          display: inline-block;
+          zoom: 1;
+          *display: inline;
+          color: #FFDD00;
+          padding-left: 10px;
+          padding-right: 10px; }
+          .colorlib-social-icons li a i {
+            font-size: 20px; }
+            #colorlib-footer .colorlib-social-icons li a {
+              padding-left: 10px;
+              padding-right: 10px; }
+              #colorlib-footer .colorlib-social-icons li a:first-child {
+                padding-left: 0; 
 }
