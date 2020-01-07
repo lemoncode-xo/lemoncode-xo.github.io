@@ -1,1 +1,0 @@
-let apple_count = '188';
