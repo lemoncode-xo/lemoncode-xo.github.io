@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Ojo Philemon |Code Smith</title>
+		<title>Ojo Philemon | Code Smith</title>
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,10 +36,10 @@
 						<!--<span class="logo"><img src="images/logo.svg" alt="" /></span>-->
 						<span class="icon fa-code alt"></span>
 						<h1>Ojo Philemon | Code Smith</h1>
-						<span style="color: pink; font-size: 35px;"><i>Hi!</i></span>
-							<p>I'm <b>Philemon</b>. A well experienced software designer and developer.
-							<br>"Mixing code and creativity to craft intuitive applications"
-							</p>
+						<span style="color: pink; font-size: 35px;"><i>Howdy,</i></span>
+							<p>I'm <b>Philemon</b></p>
+							"Mixing code and creativity to craft intuitive applications"
+							
                         <!--<span class="typed"></span>-->
                     </header>
 
@@ -49,9 +49,100 @@
 							<li><a href="#works" class="active">My Works</a></li>
 							<li><a href="#bio">About Me</a></li>
 							<li><a href="#git">Get In Touch</a></li>
-							<li><a href="assets/OjoPhilemonCV.pdf">My Résumé</a></li>
+							<li><a id="open_cv_modal">My Résumé</a></li>
 						</ul>
 					</nav>
+
+				
+				<!--Resume Modal-->
+				<div id="cv_modal" class="modal">
+					<div class="modal-header">
+						<span class="close">&times;</span>
+					</div>
+					<div class="modal-content">
+						<p>For Security reasons especially, I decided to remove my resume from this site.<br>
+							If you are an employer and would like the most recent copy of my resume, kindly 
+							send me an email stating so.<br>To do that, <i><a id="gitmodal" style="color: #5cb85c;" href="#git">click here</a></i>. 
+							<br>Also, apologies for any extra length you might have
+							to go through because of this. It came to my notice that my resume had been used for fraudulent acts in 
+							the past. This is to prevent such from happening again... 
+						</p>
+					</div>
+				</div>
+				<!--Resume Style-->
+				<style>
+					.modal{
+						display: none;
+						position: fixed;
+						z-index: 1;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						overflow: auto;
+						background-color: rgb(0,0,0);
+						background-color: rgba(0,0,0,0.4)
+					}
+					.modal-header{
+						padding: 2px 16px;
+						background-color: #5cb85c;
+						color: white;
+					}
+					.modal-content{
+						position: relative;
+						background-color: #fefefe;
+						color: black;
+						margin: auto;
+						padding: 0;
+						border: 1px solid #888;
+						width: 80%;
+						box-shadow: 0 40px 8px 0 rgba(0,0,0,0.2),
+						0 6px 20px 0 rgba(0,0,0,0.19);
+						animation-name: animatetop;
+						animation-duration: 0.4s;
+					}
+					@keyframes animatetop {
+						from {top: -300px; opacity: 0}
+						to {top: 0; opacity: 1;}
+					}
+					.close{
+						color: #aaa;
+						float: right;
+						font-size: 28px;
+						font-weight: bold;
+					}
+					.close:hover,
+					.close:focus {
+						color: black;
+						text-decoration: none;
+						cursor: pointer;
+					}
+				</style>
+				<!--MyResume Script-->
+				<script>
+					var modal = document.getElementById("cv_modal");
+					var open_modal = document.getElementById("open_cv_modal");
+					var close_modal = document.getElementsByClassName("close")[0];
+					//var gitmodal = document.getElementsById("gitmodal");
+					
+					open_modal.onclick = function() {
+						modal.style.display = "block";
+					}
+
+					close_modal.onclick = function() {
+						modal.style.display = "none";
+					}
+
+					gitmodal.onclick = function() {
+						modal.style.display = "none";
+					}
+
+					window.onclick = function(event){
+						if (event.target == modal){
+							modal.style.display = "none";
+						}
+					}
+				</script>
 
 				<!-- Main -->
 					<div id="main">
@@ -62,6 +153,27 @@
 									<h2>Here are some of my works</h2>
 								</header>
 								<ul class="features">
+									<li>
+										<!--<span class="icon major style1 fa-code"></span>-->
+										<span class="icon major style1 mx-auto" style="border:none">
+										<div class="ih-item circle effect1">
+											<a target="blank_" href="pbfm/index.html"><div class="spinner"></div>
+											<div class="img"><img src="images/pbfm.jpg"alt="img"></div>
+											<div class="info">
+												<div class="info-back">
+													<h3 style="color: #fff">Philly's BigFiles Manipulator<br>(2021)</h3>
+												</div>
+											</div>
+											</a>
+										</div>
+										</span>
+										<h3>Philly's BigFiles Manipulator</h3>
+										<p>Manipulate and extract data (like eMail Addresses, etc.) from large data files of up to 50GB 
+											<br>Data files can be .csv,.txt,.txt,.sql etc containing records
+											<br>
+											<a target="blank_" style="color: #8cc9f0" href="pbfm/index.html">Philly's BigFiles Manipulator</a>
+										</p>
+									</li>
 									<li>
 										<!--<span class="icon major style1 fa-code"></span>-->
 										<span class="icon major style1 mx-auto" style="border:none">
@@ -125,14 +237,14 @@
 										<!--<span class="icon major style5 img"></span>-->
 										<span class="icon major style5 mx-auto" style="border:none">
 										<div class="ih-item circle effect1">
-											<a href="https://github.com/Sparkles47/chat-buddyc-/blob/master/chatbuddy.cs"><div class="spinner"></div>
+											<a href="https://github.com/lemoncode-xo/chat-buddyc-/"><div class="spinner"></div>
 									        <div class="img"><img src="images/chat-buddy.gif"alt="img"></div>
 									        <div class="info"><div class="info-back"><h3 style="color: #fff">Texting<br>App<br>(2017)</h3></div></div>
 									        </a></div>
 								        </span>
 										<h3>C# Texting App</h3>
 										<p>A simple and finely desgined 2-way desktop texting application I made using C#. 
-											<a href="https://github.com/Sparkles47/chat-buddyc-/blob/master/chatbuddy.cs"><i style="color: #8cc9f0">Get it here</i></a>
+											<a href="https://github.com/lemoncode-xo/chat-buddyc-/"><i style="color: #8cc9f0">Go to Repository</i></a>
 										</p>
 									</li>
 									
@@ -151,31 +263,55 @@
 										<header class="major">
 											<h2>About Me</h2>
 										</header>
-										<p>Over a period of 7 years, I have gained(still gaining) experience as a software designer/developer and have worked on both 'pet-projects' and with large organizations.
-											<br>While I am a proficient full-stack developer, my expertise is in building scalable and intuitive Desktop and Web services
-											<br>I love creating things and learning new things. Although, new languages are fun to learn, I am most attracted to solving real customer/client problems with a business justification
-											<!--<h3><u>Language Learning Timeline</u></h3>
-											Java -> HTML -> CSS ->Javascript -> Python -> PHP -> C#-->
-											
-											<h3><u>Highlights</u></h3>
-											<b>Worked with</b>
-											<a href="https://www.crystotechng.com"><i style="color: #8cc9f0">Crystotech Nigeria</i></a> 
-											<!--<br>I am currently studying to get a <i>'Bachelor in Engineering'</i> degree at the Federal University of Technology, Akure.</p>-->
-										<!--<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>-->
+										<ul class="content">
+											<li>
+												<h3><u>Specializations</u></h3>
+												<p><i><b>Desktop App Development</b></i>
+													<br>┖C#
+													<br>┖Python
+												</p>
+												<p><i><b>Web Development</b></i>
+													<br>┖Full-Stack Web Development (HTML,CSS,JS & PHP)
+													<br>┖WordPress
+												</p>
+												<p><i><b>Illustrations</b></i>
+													<br>┖Adobe Photoshop {see some of my circa inspired illustrations <b><a href="www.instagram.com/1024_pd">@1024_pd</a></b> on instagram}
+													<br>┖Adobe XD, etc. (UI/UX)
+												</p>
+											</li>
+											<li>
+												<h3><u>Priorities</u></h3>
+												<p>- Solving real Customer/Client Problems with a Business justification
+												<br>- Building Scalable & Intuitive Applications and Services</p>
+											</li>
+											<li>
+												<h3><u>Interests & Hobbies</u></h3>
+												<p>- Pentesting
+												<br>- Music
+												<br>- Learning</p>
+											</li>
+											<li>
+												<h3><u>Highlights</u></h3>
+												<b>-Worked with
+												<a href="https://www.crystotechng.com"><i style="color: #8cc9f0">Crystotech Nigeria</i></a>
+												(2019)</b>
+												<br>
+												<b>-Internship at
+												<a href="https://www.dextercyberlab.com"><i style="color: #8cc9f0">Dexter Cyberlab</i></a>
+												(2021)</b>
+											</li>
+										</ul>
 									</div>
 									<span class="image pv-top-card-v2-section__photo-wrapper"><img src="images/profile.jpg" alt="" /></span>
 								</div>
 							</section>
-
 
 						<!-- Get In Touch -->
 							<section id="git" class="main special">
 								<header class="major">
 									<h2>Get In Touch</h2>
 								</header>
-								<form id="file-catcher" action="https://formspree.io/sesadserver@gmail.com" method="post" enctype="multipart/form-data" name="DirectMessageToPhilemon">
+								<form id="file-catcher" action="https://formspree.io/ojophilemon1024@gmail.com" method="post" enctype="multipart/form-data" name="DirectMessageToPhilemon">
 									<div class="row uniform">
 										<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -202,13 +338,13 @@
 					<footer id="footer" style="text-align: center; padding: 1em 0 0 0">
 						<section>
 							<ul class="icons">
-								<li><a href="mailto:philebaba47@outlook.com?subject=Hello%20from%20root@philemon:~#"
+								<li><a href="mailto:ojophilemon1024@gmail.com?subject=Hello%20from%20root@philemon:~#"
 								 class="icon fa-envelope alt"><span class="label">Email</span></a></li>
-								<li><a href="https://github.com/sparkles47"
+								<li><a href="https://github.com/lemoncode-xo"
 								 class="icon fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.instagram.com/phillywillis"
+								<li><a href="https://www.instagram.com/lemoncode_xo"
 								 class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.twitter.com/babaphilly"
+								<li><a href="https://www.twitter.com/lemoncode_xo"
 								 class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
 								<li><a href="https://www.linkedin.com/in/ojo-philemon-b42793129/"
 								 class="icon fa-linkedin alt"><span class="label">Linkedin</span></a></li>
