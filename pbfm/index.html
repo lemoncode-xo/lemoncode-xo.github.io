@@ -18,7 +18,7 @@
         <meta property="og:title" content="Philly's BigFiles Manipulator">
         <meta property="og:description" content="Manipulate Large Files">
         <meta name="author" content="Ojo Philemon">
-        <link rel="icon" href="images/fav.ico">
+        <link rel="icon" href="../images/fav.ico">
         <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
     
         <!--Easy to find stuff-->
@@ -35,7 +35,7 @@
 				<!--<span class="icon fa-code alt"></span>-->
 				<h1>Philly's BigFiles Manipulator</h1>
 				<span style="color: pink; font-size: 35px;"><i>About...</i></span>
-				<p><b>Philly's BigFiles Manipulator (PBFM)</b> helps its users <b>Manipulate Large Files</b>,
+				<p><b>Philly's BigFiles Manipulator (PBFM)</b> helps its users <b>Manipulate Large Files</b> of up to 50GB,
 					<br><b>Extract usefull Information</b> from such files, etc. Among other things it can do...
 					<br><br>See other features of Philly's BigFiles Manipulator: <a href="#pbfmfeatures"><b>Features</b></a>
 					<br>You can also <a href="#intro"><b>download</b></a> the free version to see a taste of what it is capable of...
@@ -59,7 +59,7 @@
 										<img src="images/linux.png" height="30" alt="img">
 										<img src="images/apple.png" height="30" alt="img">
 									</h3>
-									<button type="button"><a href="thankyou.html" target="blank_">Download Free Edition</a></button>
+									<button type="button"><a href="thankyou.html" target="blank_">Download Free Edition (10.4MB)</a></button>
 									<p style="color: #5f4d93;"></p>
 								</li>
 								<li>
@@ -68,7 +68,9 @@
 										<img src="images/linux.png" height="30" alt="img">
 										<img src="images/apple.png" height="30" alt="img">
 									</h3>
-									<button type="button"><a href="thankyou_v1/windows.html" target="blank_">Buy Full Software {One-Time Payment}</a></button>
+									<button style="background-color: rgb(36, 202, 72);" type="button">
+										<a href="thankyou_v1/windows.html" target="blank_" style="color: white;">
+											<i class="icon fa-credit-card "></i> Buy Full Software {One-Time Payment}</a></button>
 									<p style="color: #5f4d93;"></p>
 								</li>
 							</ul>
@@ -97,6 +99,10 @@
 							<div class="4u$ img" style="cursor: pointer;"><span class="image fit"><img src="images/s3.jpg" alt="screenshot3" /></span></div>
 						</div>
 					</div>
+
+					
+					<p style="color:#D65F5F;font-size: 18px;">!! Some demo videos/screengrabs can be found in the 'screengrabs' folder of the software download</p>
+					
 				</section>
 				
 				<!-- Help/Tips -->
@@ -116,10 +122,15 @@
 							<br>
 							<h2 style="text-align: left;"> [Features] </h2>
 							<b><p style="text-align: left;">
-								- Search through data files like .txt, .csv files using a keyword or multiple keywords
-								<br>- Can search through JSON files and give readable and compact output
-								<br>- Extract exixsting eMail-addresses in files if there are any
-								<br>- MXR Sorting for eMail-Addresses
+								-Work with Large files of up to 50GB
+								<br>-Work with multiple files at the same time 
+								<i style="color: red;">(Only available in full version)</i>
+								<br>- Search through data files like .txt, .csv files using a keyword or multiple keywords
+								<br>- Can search through JSON files and give readable and compact output 
+								<i style="color:red;">(Only available in 
+								full version)</i>
+								<br>- Extract exixsting eMail-addresses in selected files if there are any
+								<br>- MXR Sorting for eMail-Addresses (e.g Rackspace, Office365 etc)
 								<br>- Split Large Files by size or by number of lines
 								<br>etc.
 							</p></b>
@@ -130,10 +141,10 @@
 							<p style="text-align: left;">
 								★ Python 3.x or later
 								<br>★ At least 2 Gigabyte of RAM
-								<br>★ Disk Space of 15MB
+								<br>★ Disk Space of about 12MB for the software itself
 							</p>
 						</div>
-						<div>
+						<div id="how_to_install">
 							<br>
 							<h2 style="text-align: left;"> [How To Install] </h2>
 							<p style="text-align: left;">
@@ -142,11 +153,25 @@
 								<br>2. If you don't already have python 3.x installed on your machine, 
 								<br>please visit 
 								<a href="https://www.python.org/downloads/"><i style="color: blue;">https://www.python.org/downloads/</i></a>
-								and download the latest version of python
-								3 for your operating system.
-								<br>3. Extract the contents of the "PBFM.zip" file and double click on "install.bat"
-								<br>4. After successfull installation of Step 3, double click on "run.bat" if you use a Windows machine
-								<br>5. For Linux & Mac users simply go to your terminal and run the command, "python3 bigfiles.py"
+								and download the latest version of python3 for your operating system.
+								<br>3. Extract the contents of the "PBFM().zip" 
+								<br>4. Open the "Installation" folder
+								<br>_______a) double click the installation file for your system eg. windows_run.bat for WindowsOS
+								<br>(Note: Latest versions of windows may prevent .bat files from running, so you may have to disable the UAC so they can run)
+								<br>OR
+								<br>_______b) open your terminal(command prompt on windows), navigate to the software's main folder ('cd /path/to/folder')
+											 and run: "pip install -r requirements.txt" (make sure you have pip installed)
+								<br>
+								<br><i style="color: coral">If you missed any installation, it will tell you what you have to install</i> 
+								<br>
+								<br>5. Once successfully installed, for the last step, you can either:
+								<br>_______a) open the 'run' folder and double click on the file that suits your platfrom
+														eg. 'mac_start.command' for MacOS
+								<br>OR
+								<br>_______b) open your terminal(command prompt on windows), navigate to the software's main folder ('cd /path/to/folder') 
+											and run: "python bigfiles.py" or "python3 bigfiles.py" command 
+	depending on how python3 is installed on your machine
+								
 							</p>
 						</div>
 						
@@ -161,7 +186,7 @@
 					<form id="file-catcher" action="https://formspree.io/ojophilemon1024@gmail.com" method="post" enctype="multipart/form-data" name="ToPhilemon[About DMA]">
 						<div class="row uniform">
 							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
 							<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
 							<input hidden type="hidden" name="_subject" value="ToPhilemon[About PBFM]">
 							<div class="12u$">
